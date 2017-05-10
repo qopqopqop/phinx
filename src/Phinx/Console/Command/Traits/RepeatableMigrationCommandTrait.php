@@ -37,6 +37,13 @@ trait RepeatableMigrationCommandTrait
 {
     use AbstractCommandTrait;
 
+    /**
+     * Report the paths used for repeatable migrations.
+     *
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     * @return void
+     */
     protected function reportRepeatableMigrationPaths(InputInterface $input, OutputInterface $output)
     {
         $paths = $this->getConfig()->getRepeatableMigrationPaths();

@@ -37,6 +37,13 @@ trait SeedCommandTrait
 {
     use AbstractCommandTrait;
 
+    /**
+     * Report the paths used for seeds.
+     *
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     * @return void
+     */
     protected function reportSeedPaths(InputInterface $input, OutputInterface $output)
     {
         $paths = $this->getConfig()->getSeedPaths();

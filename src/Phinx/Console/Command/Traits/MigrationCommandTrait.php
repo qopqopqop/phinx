@@ -37,6 +37,13 @@ trait MigrationCommandTrait
 {
     use AbstractCommandTrait;
 
+    /**
+     * Report the paths used for migrations.
+     *
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     * @return void
+     */
     protected function reportMigrationPaths(InputInterface $input, OutputInterface $output)
     {
         $paths = $this->getConfig()->getMigrationPaths();
