@@ -145,4 +145,11 @@ interface ConfigInterface extends \ArrayAccess
      * @return string
      */
     public function getMigrationBaseClassName($dropNamespace = true);
+     /**
+      * Gets the base class name for seeders.
+      *
+      * @param boolean $dropNamespace Return the base sedder class name without the namespace.
+      * @return string
+      */
+     public function getSeedBaseClassName($dropNamespace = true);
 }
